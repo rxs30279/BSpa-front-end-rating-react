@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --medium_grey: hsl(216, 12%, 54%);
+  --white: hsl(0, 0%, 100%);
+  --light_grey: hsl(217, 12%, 63%);
+  --blue: hsl(213, 19%, 18%);
+  --verydarkblue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--verydarkblue);
+  height: 100vh;
+  width: 100vw;
+  font-family: "Overpass", sans-serif;
+}
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(380px, 50vh, 450px);
+  width: clamp(380px, 85vw, 450px);
+  background-color: var(--blue);
+  border-radius: 15px;
+  background-image: radial-gradient(
+    circle 379px at 25.2% 90%,
+    rgb(16, 23, 31) 0.9%,
+    rgb(24, 29, 46) 90%
+  );
+}
+.inner-page {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 85%;
+  height: 85%;
+}
+
+.circle-container {
+  width: 100%;
+}
+.circle-centre-star {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  background-image: url("./images/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.central-text {
+  color: var(--white);
+  height: 10rem;
+}
+
+.central-text > p {
+  color: var(--light_grey);
+  font-size: 15px;
+}
+/* Button section with the input buttons and Submit button */
+.input-component {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35%;
+  gap: 1rem;
+}
+.input-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.button-number-round {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--white);
+  opacity: 70%;
+  background-color: var(--blue);
+  font-weight: 400;
+}
+
+.selected-round-button {
+  background-color: var(--orange);
+}
+
+.hover-grey-round-button:hover {
+  background-color: grey;
+  opacity: 0.7;
+}
+
+.submit-button {
+  background-color: var(--orange);
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 25px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
