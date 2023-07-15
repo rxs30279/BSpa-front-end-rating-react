@@ -113,3 +113,42 @@ body {
   font-weight: 700;
   letter-spacing: 2px;
 }
+
+/* Thankyou section */
+.thankyou-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.thankyou-image {
+  height: 100px;
+  width: 200px;
+  background-image: url("./images/illustration-thank-you.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-bottom: 30px;
+}
+.text-orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 13rem;
+  background-color: var(--blue);
+  border-radius: 20px;
+  color: var(--orange);
+}
+
+.thankyou-page-content > h1 {
+  font-size: 1.9rem;
+  margin: 15px;
+  margin-top: 25px;
+}
+
+.thankyou-page-content > p {
+  margin: 3px;
+  text-align: center;
+}
